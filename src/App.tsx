@@ -36,13 +36,12 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Navbar from './components/Navbar.component';
 
-
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp>    
+  <IonApp>        
     <IonReactRouter>
-       {/* <Navbar /> */}
+       {/* <Navbar /> */}       
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/home"><Home /></Route>
