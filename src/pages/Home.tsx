@@ -24,6 +24,7 @@ const Home: React.FC = () => {
 ];
   return (
     <IonPage>
+      <IonContent>
       <Header />
       <h3 className='text-black text-md font-bold  p-2'>My Questions</h3>
           <Card className="full-width mb-10">
@@ -98,7 +99,8 @@ const Home: React.FC = () => {
                       Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
                   </p>                    
               </div>                                    
-          </Card>            
+          </Card>
+        </IonContent>        
     </IonPage>
   );
 };
