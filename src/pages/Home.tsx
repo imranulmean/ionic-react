@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent>
-      <Header />
+      <Header pageTitle={'Home'} />
       <h3 className='text-black text-md font-bold  p-2'>My Questions</h3>
           <Card className="full-width mb-10">
               <div className="flow-root">

@@ -3,9 +3,13 @@ import { Link, useLocation} from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaMoon, FaSun, FaBell } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
+import { IonHeader, IonTitle, IonToolbar } from '@ionic/react';
 
+interface headerType{
+    pageTitle?:String
+}
 
-export default function Header() {
+export default function Header({pageTitle}:headerType) {
 //   const path = useLocation().pathname;
 //   const location = useLocation();
   
@@ -24,9 +28,11 @@ export default function Header() {
 //   },[keycloak.authenticated]);
 
   return (
-    // <Navbar className={`border-b-2 border-none ${location.pathname==="/" ? "bg-black" : ""}`}>
     <Navbar className='border-b-2'>  
-      <div className="flex md:order-2">          
+      <div className='flex flex-1'>
+        <IonTitle>{pageTitle}</IonTitle>            
+      </div>  
+      <div className="flex md:order-2">
             <Dropdown
             arrowIcon={false}
             inline

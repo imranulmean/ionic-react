@@ -36,7 +36,7 @@ const Inbox: React.FC = () => {
   return (
     <IonPage>
       <IonContent>
-        <Header />
+        <Header pageTitle={'Inbox'}/>
       <h5 className="text-1xl text-center font-bold tracking-tight text-gray-900 dark:text-white mb-3">Inbox</h5>
          <h5 className="text-sm font-bold tracking-tight dark:text-white mb-3 px-3">My Questions</h5>
          <InboxComponent inbox={inbox[0]}/>

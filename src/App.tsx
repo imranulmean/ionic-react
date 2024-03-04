@@ -35,6 +35,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import Navbar from './components/Navbar.component';
+import MessageBox from './pages/MessageBox';
 
 setupIonicReact();
 
@@ -46,6 +47,7 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route exact path="/home"><Home /></Route>
           <Route exact path="/inbox"><Inbox /></Route>
+          <Route exact path="/inbox/message"><MessageBox /></Route>
           <Route exact path="/askNow"><AskNow /></Route>
           <Route exact path="/experts"><Experts /></Route>          
           <Route exact path="/"><Redirect to="/home" /></Route>
